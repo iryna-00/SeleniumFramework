@@ -19,6 +19,11 @@ public class BrowserTest {
         System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://mvnrepository.com/");
-
+        try {
+            Thread.sleep(3000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+        driver.close();
     }
 }
