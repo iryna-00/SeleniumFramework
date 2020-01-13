@@ -4,7 +4,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserTest {
     public static void main(String[] args) {
-        System.setProperty("webdriver.gecko.driver","C:/Users/Iryna_Baranov/IdeaProjects/Mentoring/SeleniumFramework/Drivers/geckodriver/geckodriver.exe");
+
+        String projectPath = System.getProperty("user.dir");
+        System.out.println(projectPath +"Drivers/geckodriver/geckodriver.exe");
+
+        System.setProperty("webdriver.gecko.driver", projectPath +"/Drivers/geckodriver/geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.get("https://mvnrepository.com/");
     }
