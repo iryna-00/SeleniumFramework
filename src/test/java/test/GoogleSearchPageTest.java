@@ -13,10 +13,10 @@ public class GoogleSearchPageTest {
 
     }
 
-    public static void googleSearchTest(){
+    private static void googleSearchTest(){
 
         String projectPath = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver.exe");
         driver = new ChromeDriver();
 
         GoogleSearchPageObjects searchPageObj = new GoogleSearchPageObjects(driver);
