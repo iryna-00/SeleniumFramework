@@ -9,5 +9,11 @@
         <module name="SeleniumFramework" />
       </profile>
     </annotationProcessing>
+<<<<<<< HEAD
+=======
+    <bytecodeTargetLevel>
+      <module name="SeleniumFramework" target="1.5" />
+    </bytecodeTargetLevel>
+>>>>>>> origin/master
   </component>
 </project>
