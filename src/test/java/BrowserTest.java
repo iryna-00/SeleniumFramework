@@ -20,8 +20,8 @@ public class BrowserTest {
 
 
         /*Chrome browser settings*/
-        //System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver.exe");//Windows
-        System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver");//Linux
+        System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver.exe");//Windows
+        //System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver");//Linux
         WebDriver driver = new ChromeDriver();
         driver.get("https://google.com/");
         WebElement textbox = driver.findElement(By.xpath("//input[@name='q']"));

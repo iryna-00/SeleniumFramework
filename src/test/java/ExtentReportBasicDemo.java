@@ -20,9 +20,8 @@ public class ExtentReportBasicDemo {
         ExtentTest test = extent.createTest("Test1: Google Search", "Description here");
 
         String projectPath = System.getProperty("user.dir");
-        //System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver.exe");//Windows
-        System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver");//Linux
-
+        System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver.exe");//Windows
+        //System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver");//Linux
         driver = new ChromeDriver();
 
         test.log(Status.INFO, "Starting test case");

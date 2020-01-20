@@ -15,8 +15,8 @@ public class Test1_GoogleSearch {
     private static void googleSearch(){
 
         String projectPath = System.getProperty("user.dir");
-        //System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver.exe");//Windows
-        System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver");//Linux
+        System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver.exe");//Windows
+        //System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver");//Linux
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://google.com");
