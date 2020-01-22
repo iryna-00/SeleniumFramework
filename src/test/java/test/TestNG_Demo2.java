@@ -8,21 +8,21 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestNG_Demo {
+public class TestNG_Demo2 {
 
     private WebDriver driver = null;
 
     @BeforeTest
-    public void setUpTest() {
+    public void setUpTest(){
 
         String projectPath = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", projectPath + "/Drivers/chromeriver/chromedriver.exe");//Windows
+        System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver.exe");//Windows
         //System.setProperty("webdriver.chrome.driver", projectPath +"/Drivers/chromeriver/chromedriver");//Linux
         driver = new ChromeDriver();
     }
 
     @Test
-    private void googleSearch() {
+    private void googleSearch(){
 
         driver.get("https://google.com");
         driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Hello World");
@@ -30,7 +30,7 @@ public class TestNG_Demo {
     }
 
     @AfterTest
-    public void tearDownTest() {
+    public void tearDownTest(){
 
         driver.close();
         System.out.println("Test Completed Successfully");
